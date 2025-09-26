@@ -31,4 +31,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace gitlab.com/slon/shad-go => github.com/tcheremkhina/golang-toy-bazel v0.0.0-20250926144910-058d2cf1456e
+replace gitlab.com/slon/shad-go => github.com/tcheremkhina/golang-toy-bazel v0.0.0-20250926150750-4abf54f284ef
