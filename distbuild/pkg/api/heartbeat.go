@@ -18,6 +18,9 @@ type JobResult struct {
 	//
 	// Если Error == nil, значит джоб завершился успешно.
 	Error *string
+
+	// id билда для которого выполнена эта джоба (или взят из кэша результат)
+	buildID build.ID
 }
 
 type WorkerID string
@@ -58,6 +61,9 @@ type JobSpec struct {
 	Artifacts map[build.ID]WorkerID
 
 	build.Job
+
+	// id билда для которого мы выполняем эту джобу
+	buildID build.ID
 }
 
 type HeartbeatResponse struct {
